@@ -1,0 +1,42 @@
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 76
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 1
+      Cell Size: 0.5
+      Class: rviz_default_plugins/Grid
+      Name: Grid
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Radar Points
+      Topic: /radar/points
+      Size (Pixels): 2
+      Style: Points
+      Queue Size: 10
+    - Class: rviz_default_plugins/Path
+      Name: Path
+      Topic: /path
+      Line Style: Lines
+      Line Width: 0.03
+    - Class: rviz_default_plugins/TF
+      Name: TF
+  Global Options:
+    Fixed Frame: odom
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 40
+      Pitch: 0.6
+      Yaw: 0.8
+Window Geometry:
+  Width: 1200
+  Height: 800

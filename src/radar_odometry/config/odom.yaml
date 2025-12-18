@@ -1,0 +1,16 @@
+radar_simple_odometry:
+  ros__parameters:
+    input_topic: "/radar/points"
+    frame_id_odom: "odom"
+    frame_id_child: "radar"
+    publish_tf: true
+    publish_path: true
+    max_icp_iters: 15
+    max_corr_dist: 1.5
+    min_points: 200
+    downsample_voxel: 0.0   # 0 disables voxel downsample
+    dynamic_filter:
+      enabled: true
+      # Very simple gating for now:
+      # remove points with |doppler| > thresh (often moving objects / outliers)
+      doppler_abs_max: 8.0

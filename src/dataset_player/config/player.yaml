@@ -1,0 +1,12 @@
+bunker02_radar_player:
+  ros__parameters:
+    radar_dir: "/home/yni5/datasets/bunker02/radar"
+    radar_csv: "radar.csv"
+    topic_points: "/radar/points"
+    frame_id: "radar"
+    stamp_policy: "now"     # now | bag
+    publish_rate_hz: 100.0  # virtual frame rate (fast playback)
+    loop: false
+    start_seq: 0
+    end_seq: -1
+    publish_clock: false
