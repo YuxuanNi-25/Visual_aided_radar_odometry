@@ -1,4 +1,4 @@
-bunker02_radar_player:
+radar_player:
   ros__parameters:
     radar_dir: "/home/yni5/datasets/bunker02/radar"
     radar_csv: "radar.csv"

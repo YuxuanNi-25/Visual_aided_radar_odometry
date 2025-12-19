@@ -12,9 +12,9 @@ def generate_launch_description():
     return LaunchDescription([
         DeclareLaunchArgument('config', default_value=default_cfg),
         Node(
-            package='bunker02_dataset_player',
-            executable='bunker02_radar_player',
-            name='bunker02_radar_player',
+            package='dataset_player',
+            executable='radar_player',
+            name='radar_player',
             output='screen',
             parameters=[LaunchConfiguration('config')],
         )

@@ -12,7 +12,7 @@ from .pc2_builder import make_pc2
 
 class RadarPlayer(Node):
     def __init__(self):
-        super().__init__('bunker02_radar_player')
+        super().__init__('radar_player')
         self.declare_parameters('', [
             ('radar_dir', ''),
             ('radar_csv', 'radar.csv'),
